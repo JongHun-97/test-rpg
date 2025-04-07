@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="common.js" defer></script>
+    <script src="UI.js" defer></script>
+    <script src="battle.js" defer></script>
+    <link rel="stylesheet" href="a.css">
+    <link rel="stylesheet" href="card.css">
+</head>
+
+<body>
+    <div id="enemy">
+        적
+        <div id="enemy_card">
+            <div class="card_firstlayer">
+                <div class="info" id="enemy_Name"></div>
+                <div class="info" id="enemy_Level">레벨</div>
+                <div class="info" id="enemy_CurExp">현재경험치 /</div>
+                <div class="info" id="enemy_ReqExp">필요경험치</div>
+            </div>
+            <div class="card_secondlayer">
+                <div class="info" id="enemy_HP"></div>
+            </div>
+            <div class="card_status">
+                <div class="info" id="enemy_Atk"></div>
+                <div class="info" id="enemy_Def"></div>
+                <div class="info" id="enemy_Acc"></div>
+                <div class="info" id="enemy_Eva"></div>
+                <div class="info" id="enemy_Agi"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="player">
+        플레이어
+        <div id="player_card">
+            <div class="card_firstlayer">
+                <div class="info" id="player_Name"></div>
+                <div class="info" id="player_Level">레벨</div>
+                <div class="info" id="player_CurExp">현재경험치 /&nbsp;</div>
+                <div class="info" id="player_ReqExp">필요경험치</div>
+            </div>
+            <div class="card_secondlayer">
+                <div class="info" id="player_HP"></div>
+            </div>
+            <div class="card_status">
+                <div class="info" id="player_Atk"></div>
+                <div class="info" id="player_Def"></div>
+                <div class="info" id="player_Acc"></div>
+                <div class="info" id="player_Eva"></div>
+                <div class="info" id="player_Agi"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="battle">
+        전투 기록
+    
+        <div id="battle_log">
+
+        </div>
+    </div>
+    <div id="action_button">
+        <input id="attack_button" type="button" value="공격!" onclick="att_phase()">
+        <!-- <input id="defence_button" type="button" value="방어!" onclick="def_phase()"> -->
+    </div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+
+</html>

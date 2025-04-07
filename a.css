@@ -1,0 +1,46 @@
+#battle {
+    background-color: rgba(128, 128, 128, 0.1);
+    position : absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30px;
+    width: 30vw;
+    height: 80vh;
+    padding-top: 10px;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#battle_log {
+    border: 2px black solid;
+    width: 80%;
+    height: 90%;
+    position: absolute;
+    top: 50px;
+}
+
+
+#action_button {
+    /* background-color:rgba(128, 128, 128, 0.1); */
+    position : absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50vw;
+    height: 10vh;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#attack_button, #defence_button {
+width: 150px;
+height: 70%;
+margin-left: 20px;
+margin-right: 20px;
+font-size: 2.5em;
+font-weight: 600;
+border: 2px solid black;
+}

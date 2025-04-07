@@ -1,0 +1,98 @@
+#player {
+    background-color: rgba(128, 128, 128, 0.1);
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    width: 30vw;
+    height: 80vh;
+    padding-top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#enemy {
+    background-color: rgba(128, 128, 128, 0.1);
+    position: absolute;
+    left: 10px;
+    top: 30px;
+    width: 30vw;
+    height: 80vh;
+    padding-top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#player_card,
+#enemy_card {
+    border: 2px black solid;
+    border-radius: 30px;
+    width: 80%;
+    height: 90%;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card_firstlayer {
+    height: 50px;
+    display: flex;
+    position: absolute;
+    top: 20px;
+}
+
+.info {
+    background-color: aliceblue;
+}
+
+#player_Name,
+#enemy_Name {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+#player_Level,
+#enemy_Level {
+    width: 100px;
+    height: 50px;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+#player_CurExp,
+#enemy_CurExp {
+    height: 50px;
+    font-size: 1.3em;
+}
+
+#player_ReqExp,
+#enemy_ReqExp {
+    height: 50px;
+    font-size: 1.3em;
+}
+
+.card_secondlayer {
+    height: 50px;
+    position: absolute;
+    display: flex;
+    top: 80px;
+    right: 20px;
+}
+
+.card_status {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    font-size: 1.5em;
+    text-align: left;
+    line-height: 2;
+}
